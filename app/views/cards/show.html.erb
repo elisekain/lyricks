@@ -1,0 +1,7 @@
+
+<h3><%= @card.title %></h3>
+<p><%= @card.lyrics %></p>
+
+<%= link_to "Edit", edit_card_path(@card) %>
+<%= link_to "Delete", card_path(@card), method: :delete, class: "delete" %>
+<%= link_to "Return", cards_path %>

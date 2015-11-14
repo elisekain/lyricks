@@ -1,0 +1,10 @@
+<%= form_for @card do |f| %>
+
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+
+  <%= f.label :lyrics %>
+  <%= f.text_area :lyrics, size: "60x12" %>
+
+  <%= f.submit %>
+<% end %>

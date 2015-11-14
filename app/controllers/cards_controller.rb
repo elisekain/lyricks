@@ -3,60 +3,47 @@ class CardsController < ApplicationController
   def index
     @cards = Card.all
   end
-  #
-  # # new
-  # def new
-  #   @board = Board.find(params[:board_id])
-  #   @pin = Pin.new
-  # end
-  #
-  # # create
-  # def create
-  #   @board = Board.find(params[:board_id])
-  #   @pin = current_user.pins.create!(pin_params.merge(board: @board))
-  #   if @pin.save
-  #     flash[:notice] = "#{@pin.title} was successfully created."
-  #     redirect_to @board
-  #   else
-  #     render :new
-  #   end
-  # end
-  # #
-  # # #show
-  # # def show
-  # #   @song = Song.find(params[:id])
-  # #   @artist = @song.artist
-  # # end
-  # #
-  # # edit
-  # def edit
-  #   @pin = Pin.find(params[:id])
-  #   @board = Board.find(params[:board_id])
-  # end
-  #
-  # # update
-  # def update
-  #   @pin = Pin.find(params[:id])
-  #   @board = Board.find(params[:board_id])
-  #   if @pin.update(pin_params)
-  #     flash[:notice] = "#{@pin.title} was successfully updated."
-  #     redirect_to @board
-  #   else
-  #     render :edit
-  #   end
-  # end
-  #
-  # # destroy
-  # def destroy
-  #   @board = Board.find(params[:board_id])
-  #   @pin = Pin.find(params[:id])
-  #   @pin.destroy
-  #   redirect_to @board
-  # end
-  #
-  #
-  # private
-  # def pin_params
-  #   params.require(:pin).permit(:title, :image)
-  # end
+
+  def new
+    @card = Card.new
+  end
+
+  def create
+    @card = current_user.cards.create!(card_params)
+    if @card.save
+      flash[:notice] = "#{@card.title} was successfully created."
+      redirect_to cards_path
+    else
+      render :new
+    end
+  end
+
+  def show
+    @card = Card.find(params[:id])
+  end
+
+  def edit
+    @card = Card.find(params[:id])
+  end
+
+  def update
+    @card = Card.find(params[:id])
+    if @card.update(card_params)
+      flash[:notice] = "#{@card.title} was successfully updated."
+      redirect_to card_path(@card)
+    else
+      render :edit
+    end
+  end
+
+  def destroy
+    @card = Card.find(params[:id])
+    @card.destroy
+    redirect_to cards_path
+  end
+
+  private
+  def card_params
+    params.require(:card).permit(:title, :lyrics)
+  end
 end

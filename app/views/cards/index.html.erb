@@ -1,1 +1,8 @@
 <h1>Cards Index Page</h1>
+
+<%= link_to "Create New Card", new_card_path %>
+
+<% @cards.each do |card| %>
+  <h3><%= link_to card.title, card_path(card) %></h3>
+  <p><%= card.lyrics %></p>
+<% end %>
