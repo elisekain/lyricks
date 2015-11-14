@@ -2,6 +2,7 @@
 <html>
 <head>
   <title>Lyricks</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
@@ -11,7 +12,7 @@
   <p class="notice"><%= notice %></p>
   <p class="alert"><%= alert %></p>
 
-  <!-- Devise User Actions -->
+  <!-- Devise User -->
   <% if current_user %>
     <h3><%= link_to 'Signout', destroy_user_session_path, :method => :delete %></h3>
   <% else %>
