@@ -8,17 +8,21 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <!-- Flash Messages -->
-  <p class="notice"><%= notice %></p>
-  <p class="alert"><%= alert %></p>
-
-  <!-- Devise User -->
-  <% if current_user %>
-    <h3><%= link_to 'Signout', destroy_user_session_path, :method => :delete %></h3>
-  <% else %>
-    <h3><%= link_to 'Signup', new_user_registration_path %></h3>
-    <h3><%= link_to 'Login', new_user_session_path %></h3>
-  <% end %>
+  <nav class="cf">
+    <h1>Lyricks</h1>
+    <ul>
+      <!-- Devise User -->
+      <% if current_user %>
+        <li><%= link_to 'Signout', destroy_user_session_path, :method => :delete %></li>
+      <% else %>
+        <li><%= link_to 'Signup', new_user_registration_path %></li>
+        <li><%= link_to 'Login', new_user_session_path %></li>
+      <% end %>
+    </ul>
+    <!-- Flash Messages -->
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+  </nav>
 
 <%= yield %>
 

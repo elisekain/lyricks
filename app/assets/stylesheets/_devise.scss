@@ -1,0 +1,61 @@
+@import 'vars';
+
+/* Devise Pages */
+.devise {
+  margin: 0;
+  padding: 5% 15% 25% 15%;
+  /* Image from unsplash.com by William Iven */
+  background-image: url('speaker.jpeg');
+  background-position: 0;
+
+  @media screen and (max-width: $break-med) {
+    padding: 10% 15% 60% 15%;
+  }
+}
+
+.devise_form {
+  background-color: rgba($tan, 0.7);
+  display: inline-block;
+  margin: 0 15%;
+  padding: 4%;
+  width: 60%;
+  text-align: center;
+
+  a {
+    padding: 2%;
+  }
+
+  h2 {
+    font-family: $script-font;
+    font-size: 3rem;
+    margin: 1%;
+  }
+
+  @media screen and (max-width: $break-med) {
+    width: 90%;
+    margin: 0 5%;
+  }
+}
+
+.field {
+  padding: 2%;
+}
+
+label {
+  display: inline-block;
+  width: 125px;
+}
+
+.actions input {
+  font-size: 1.5rem;
+  color: $white;
+  background-color: $red;
+  border: none;
+  padding: 2% 6%;
+  margin: 2%;
+  @include border-radius(5px);
+
+  &:hover {
+    background-color: darken($red, 10%);
+  }
+}

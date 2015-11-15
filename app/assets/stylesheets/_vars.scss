@@ -1,0 +1,21 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700|Covered+By+Your+Grace|Bevan);
+
+$black: #0D1B1E;
+$red: #74282E;
+$tan: #B8B09D;
+$grey: #4B5358;
+$white: #F4F4F4;
+
+$headline-font: 'Bevan', cursive;
+$main-font: 'Montserrat', sans-serif;
+$script-font: 'Covered By Your Grace', cursive;
+
+$break-small: 500px;
+$break-med: 920px;
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}

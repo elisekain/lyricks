@@ -1,0 +1,43 @@
+@import 'vars';
+
+/* Nav */
+
+nav, h1, ul, p {
+  margin: 0;
+}
+
+nav {
+  background-color: $black;
+
+  h1, ul, li {
+    display: inline-block;
+    padding: 1.75%;
+  }
+
+  h1 {
+    font-family: $headline-font;
+    font-size: 3rem;
+    float: left;
+    width: 20%;
+    color: $tan;
+  }
+
+  ul {
+    float: left;
+    width: 80%;
+  }
+
+  li {
+    float: right;
+    background-color: $tan;
+    margin: 1%;
+  }
+
+  p {
+    position: absolute;
+    left: 35%;
+    top: 5%;
+    color: $white;
+    padding-bottom: 3%;
+  }
+}
