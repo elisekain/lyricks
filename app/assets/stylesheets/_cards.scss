@@ -3,7 +3,7 @@
 .card_container {
   position: relative;
   width: 50%;
-  margin: 3% auto;
+  margin: 3% auto 1%;
   padding: 3%;
   border: 1.5px solid $grey;
 
@@ -39,4 +39,24 @@
 .card_overlay {
   background-color: $tan;
   padding: 3%;
+}
+
+
+.actions {
+  width: 50%;
+  margin: 0 auto 5%;
+}
+
+.lyrick_action {
+    display: inline-block;
+    background-color: $red;
+    color: $white;
+    padding: 1.5%;
+    min-width: 70px;
+    text-align: center;
+    margin: 0 0.5%;
+
+  &:hover {
+    background-color: darken($red, 10%);
+  }
 }
