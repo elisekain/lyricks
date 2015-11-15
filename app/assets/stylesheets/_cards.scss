@@ -1,0 +1,42 @@
+@import 'vars';
+
+.card_container {
+  position: relative;
+  width: 50%;
+  margin: 3% auto;
+  padding: 3%;
+  border: 1.5px solid $grey;
+
+  p {
+    text-align: justify;
+    font-size: 0.75rem;
+    color: $grey;
+  }
+
+  h3 {
+    position: absolute;
+    font-family: $script-font;
+    color: $white;
+    font-size: 3rem;
+    text-align: center;
+    width: 80%;
+  }
+
+  @media screen and (max-width: $break-med) {
+    width: 70%;
+
+  }
+
+  @media screen and (max-width: $break-small) {
+    width: 95%;
+
+    h3 {
+      font-size: 2rem;
+    }
+  }
+}
+
+.card_overlay {
+  background-color: $tan;
+  padding: 3%;
+}

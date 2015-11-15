@@ -1,6 +1,10 @@
 
-<h3><%= @card.title %></h3>
-<p><%= @card.lyrics %></p>
+<div class="card_container">
+  <div class="card_overlay">
+    <h3><%= @card.title %></h3>
+    <p><%= @text_collection %></p>
+  </div>
+</div>
 
 <%= link_to "Edit", edit_card_path(@card) %>
 <%= link_to "Delete", card_path(@card), method: :delete, class: "delete" %>

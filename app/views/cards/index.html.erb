@@ -1,8 +1,15 @@
-<h1>Cards Index Page</h1>
+<h1 class="heading">Your Lyricks</h1>
 
-<%= link_to "Create New Card", new_card_path %>
+<div class="card_preview">
+  <div class="card_overlay_preview create_new">
+  <h3><%= link_to "Create New Lyrick", new_card_path %></h3>
+  </div>
+</div>
 
-<% @cards.each do |card| %>
-  <h3><%= link_to card.title, card_path(card) %></h3>
-  <p><%= card.lyrics %></p>
-<% end %>
+  <% @cards.each do |card| %>
+    <div class="card_preview">
+      <div class="card_overlay_preview">
+        <h3><%= link_to card.title, card_path(card) %></h3>
+      </div>
+    </div>
+  <% end %>

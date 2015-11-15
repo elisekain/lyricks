@@ -19,7 +19,10 @@ nav {
     font-size: 3rem;
     float: left;
     width: 20%;
-    color: $tan;
+
+    a {
+      color: $tan;
+    }
   }
 
   ul {
@@ -31,6 +34,10 @@ nav {
     float: right;
     background-color: $tan;
     margin: 1%;
+
+    a {
+      color: $white;
+    }
   }
 
   p {

@@ -1,0 +1,34 @@
+@import 'vars';
+
+.card_preview {
+  display: inline-block;
+  width: 30%;
+  margin: 1%;
+  padding: 2%;
+  border: 1.5px solid $grey;
+
+}
+.card_overlay_preview {
+  background-color: $tan;
+  padding: 15% 2%;
+
+  &:hover {
+    background-color: darken($tan, 10%);
+  }
+
+  h3 {
+    text-align: center;
+  }
+  a {
+    color: $white;
+  }
+}
+
+.create_new {
+  background-color: $red;
+  padding: 15% 2%;
+
+  &:hover {
+    background-color: darken($red, 10%);
+  }
+}
