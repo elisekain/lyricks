@@ -46,7 +46,8 @@ label {
   width: 125px;
 }
 
-.actions input {
+/* Submit Buttons on Forms */
+.actions input, .create_lyrick {
   font-size: 1.5rem;
   color: $white;
   background-color: $red;

@@ -1,0 +1,60 @@
+@import 'vars';
+
+
+.lyrick_form {
+  width: 50%;
+  margin: 3% auto;
+  background-color: $tan;
+
+  @media screen and (max-width: $break-med) {
+    width: 70%;
+  }
+
+  @media screen and (max-width: $break-small) {
+    width: 95%;
+
+    .heading {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+.new_card, .edit_card {
+  text-align: center;
+
+ label {
+    display: block;
+    width: 25%;
+    margin: 0.5% auto;
+    padding: 2%;
+    font-size: 1.2rem;
+  }
+
+  #card_title {
+    width: 300px;
+    height: 25px;
+  }
+
+  textarea {
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  /* Submit Button */
+  .create_lyrick {
+    padding: 2%;
+    margin: 5%;
+    font-size: 1.4rem;
+  }
+
+  @media screen and (max-width: $break-small) {
+    label {
+      font-size: 0.9rem;
+    }
+
+    .create_lyrick {
+      font-size: 1rem;
+    }
+  }
+}
