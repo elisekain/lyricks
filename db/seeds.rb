@@ -1,14 +1,14 @@
 users = User.create!([
-  {email: "rebecca@example.com", password: "rebeccapassword", password_confirmation: "rebeccapassword"},
-  {email: "john@example.com", password: "johnpassword", password_confirmation: "johnpassword"},
-  {email: "darren@example.com", password: "darrenpassword", password_confirmation: "darrenpassword"},
-  {email: "susan@example.com", password: "susanpassword", password_confirmation: "susanpassword"},
-  {email: "tyler@example.com", password: "tylerpassword", password_confirmation: "tylerpassword"},
-  {email: "paul@example.com", password: "paulpassword", password_confirmation: "paulpassword"},
-  {email: "christy@example.com", password: "christypassword", password_confirmation: "christypassword"},
-  {email: "michael@example.com", password: "michaelpassword", password_confirmation: "michaelpassword"},
-  {email: "andrew@example.com", password: "andrewpassword", password_confirmation: "andrewpassword"},
-  {email: "bonnie@example.com", password: "bonniepassword", password_confirmation: "bonniepassword"},
+  {email: "rebecca@example.com", username: "rebecca", password: "rebeccapassword", password_confirmation: "rebeccapassword"},
+  {email: "john@example.com", username: "john", password: "johnpassword", password_confirmation: "johnpassword"},
+  {email: "darren@example.com", username: "darren", password: "darrenpassword", password_confirmation: "darrenpassword"},
+  {email: "susan@example.com", username: "susan", password: "susanpassword", password_confirmation: "susanpassword"},
+  {email: "tyler@example.com", username: "tyler", password: "tylerpassword", password_confirmation: "tylerpassword"},
+  {email: "paul@example.com", username: "paul", password: "paulpassword", password_confirmation: "paulpassword"},
+  {email: "christy@example.com", username: "christy", password: "christypassword", password_confirmation: "christypassword"},
+  {email: "michael@example.com", username: "michael", password: "michaelpassword", password_confirmation: "michaelpassword"},
+  {email: "andrew@example.com", username: "andrew", password: "andrewpassword", password_confirmation: "andrewpassword"},
+  {email: "bonnie@example.com", username: "bonnie", password: "bonniepassword", password_confirmation: "bonniepassword"},
 ])
 
 cards = Card.create!([
