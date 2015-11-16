@@ -21,7 +21,7 @@ nav {
     padding: 1% 2%;
 
     a {
-      color: $tan;
+      color: lighten($grey, 10%);
     }
   }
 
@@ -33,7 +33,7 @@ nav {
 
   li {
     float: right;
-    background-color: $tan;
+    background-color: lighten($grey, 10%);
     margin: 1%;
     padding: 1.75%;
 

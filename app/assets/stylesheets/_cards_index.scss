@@ -94,5 +94,9 @@
     display: inline-block;
     margin: -1% auto;
     width: 18px;
+
+    @media screen and (max-width: $break-med) {
+      display: none;
+    }
   }
 }

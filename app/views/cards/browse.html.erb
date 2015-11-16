@@ -1,0 +1,15 @@
+<div class="actions">
+  <%= link_to "My Lyricks", cards_path, class: "lyrick_action" %>
+</div>
+
+<h1 class="heading">Browse Lyricks</h1>
+
+  <% @cards.each do |card| %>
+    <% if !card.private %>
+      <div class="card_preview">
+        <div class="card_overlay_preview <%= card.color_selection %> font_<%= card.font_selection %>">
+          <h3><%= link_to card.title, card_path(card) %></h3>
+        </div>
+      </div>
+    <% end %>
+  <% end %>

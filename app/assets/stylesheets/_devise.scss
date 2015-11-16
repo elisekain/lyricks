@@ -14,21 +14,24 @@
 }
 
 .devise_form {
-  background-color: rgba($tan, 0.7);
+  background-color: rgba($grey, 0.7);
   display: inline-block;
   margin: 0 15%;
   padding: 4%;
   width: 60%;
   text-align: center;
+  color: $white;
 
   a {
     padding: 2%;
+    color: $white;
   }
 
   h2 {
     font-family: $script-font;
     font-size: 3rem;
     margin: 1%;
+
   }
 
   @media screen and (max-width: $break-med) {
@@ -46,13 +49,17 @@ label {
   width: 125px;
 }
 
+input {
+  color: $grey;
+}
+
 /* Submit Buttons on Forms */
 .actions input, .create_lyrick {
   font-size: 1.5rem;
   color: $white;
   background-color: $red;
   border: none;
-  padding: 2% 6%;
+  padding: 3.5% 6%;
   margin: 2%;
   @include border-radius(5px);
 

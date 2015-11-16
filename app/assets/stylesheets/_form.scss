@@ -4,7 +4,7 @@
 .lyrick_form {
   width: 50%;
   margin: 3% auto;
-  background-color: $tan;
+  background-color: lighten($grey, 20%);
 
   @media screen and (max-width: $break-med) {
     width: 70%;
@@ -22,13 +22,13 @@
 .new_card, .edit_card {
   text-align: center;
 
- label {
+ label, legend {
     display: block;
     width: 45%;
     margin: 0.5% auto;
-    padding: 2%;
+    padding: 2% 0;
     font-size: 1.2rem;
-    color: darken($tan, 30%);
+    color: darken($grey, 30%);
   }
 
   #card_title {
@@ -42,16 +42,16 @@
     width: 90%;
   }
 
-  /* Submit Button */
-  .create_lyrick {
-    padding: 2%;
-    margin: 5%;
-    font-size: 1.4rem;
-  }
-
   fieldset {
     margin: 5%;
     border-color: $white;
+  }
+
+  /* Submit Button */
+  .create_lyrick {
+    padding: 2%;
+    margin: 0 2% 5%;
+    font-size: 1.4rem;
   }
 
   /* Custom Selections */
@@ -60,11 +60,11 @@
     width: 30%;
   }
 
-  .font_select_container {
+  .font_select_container, .setting_select_container {
     width: 48%;
   }
 
-  .icon_select_container, .color_select_container, .font_select_container {
+  .icon_select_container, .color_select_container, .font_select_container, .setting_select_container {
     display: inline-block;
 
     img {

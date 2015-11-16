@@ -117,7 +117,7 @@
 
 .lyrick_action {
     display: inline-block;
-    background-color: $red;
+    background-color: $grey;
     color: $white;
     padding: 1.5%;
     min-width: 70px;
@@ -125,7 +125,7 @@
     margin: 0 0.5%;
 
   &:hover {
-    background-color: darken($red, 10%);
+    background-color: darken($grey, 10%);
   }
 
   @media screen and (max-width: $break-small) {

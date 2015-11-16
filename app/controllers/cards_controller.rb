@@ -1,7 +1,10 @@
 class CardsController < ApplicationController
 
   def index
-    # @cards = current_user.cards
+    @cards = current_user.cards
+  end
+
+  def browse
     @cards = Card.all
   end
 
@@ -49,6 +52,6 @@ class CardsController < ApplicationController
 
   private
   def card_params
-    params.require(:card).permit(:title, :lyrics, :icon_selection, :color_selection, :font_selection)
+    params.require(:card).permit(:title, :lyrics, :icon_selection, :color_selection, :font_selection, :private)
   end
 end

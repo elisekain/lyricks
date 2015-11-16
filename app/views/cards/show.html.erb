@@ -1,7 +1,12 @@
 <div class="actions">
-  <%= link_to "Edit", edit_card_path(@card), class: "lyrick_action" %>
-  <%= link_to "Delete", card_path(@card), method: :delete, class: "delete lyrick_action" %>
-  <%= link_to "Return", cards_path, class: "lyrick_action" %>
+  <%= link_to "My Lyricks", cards_path, class: "lyrick_action" %>
+  <%= link_to "Browse Lyricks", cards_browse_path, class: "lyrick_action" %>
+  <% if current_user.id == @card.user_id %>
+    <%= link_to "Edit", edit_card_path(@card), class: "lyrick_action" %>
+    <%= link_to "Delete", card_path(@card), method: :delete, class: "delete lyrick_action" %>
+  <% else %>
+    <%= "Designed by: #{@card.user.email}" %>
+  <% end %>
 </div>
 
 <div class="card_container">
