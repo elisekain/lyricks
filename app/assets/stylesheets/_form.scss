@@ -28,6 +28,7 @@
     margin: 0.5% auto;
     padding: 2%;
     font-size: 1.2rem;
+    color: $white
   }
 
   #card_title {
@@ -60,7 +61,21 @@
     width: 48%;
 
     img {
-      opacity: 0.5;
+      opacity: 0.4;
+    }
+
+    input {
+      display: none;
+    }
+
+    /* Checked State */
+
+    input:checked ~ label {
+      color: $grey;
+    }
+
+    input:checked ~ img {
+      opacity: 1;
     }
   }
 
@@ -84,7 +99,6 @@
     height: 32px;
     @include border-radius(5px);
   }
-
 
   .grey_color {
     background-color: $grey;
@@ -115,6 +129,8 @@
     background-color: $purple;
     border: 2px solid darken($purple, 10%);
   }
+
+
 
   @media screen and (max-width: $break-small) {
     label {

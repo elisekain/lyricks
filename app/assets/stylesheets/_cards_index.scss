@@ -15,10 +15,12 @@
 
   .font_print {
     font-family: $script-font;
+    font-size: 1.3rem;
   }
 
   .font_cursive {
     font-family: $cursive-font;
+    font-size: 1.3rem;
   }
 
   /* Variable Colors */
@@ -82,5 +84,15 @@
 
   &:hover {
     background-color: darken($red, 10%);
+  }
+
+  h3 {
+    display: inline-block;
+    padding: 2% 6%;
+  }
+  .plus {
+    display: inline-block;
+    margin: -1% auto;
+    width: 18px;
   }
 }
