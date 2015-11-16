@@ -3,21 +3,21 @@
 .card_container {
   position: relative;
   width: 50%;
-  margin: 3% auto 1%;
+  margin: 1% auto;
   padding: 3%;
   border: 1.5px solid $grey;
 
   p {
     text-align: justify;
     font-size: 0.75rem;
-    color: $grey;
+    color: darken($tan, 20%);
   }
 
   h3 {
     position: absolute;
     font-family: $script-font;
     color: $white;
-    font-size: 3rem;
+    font-size: 3.5rem;
     text-align: center;
     width: 80%;
   }
@@ -44,7 +44,11 @@
 
 .actions {
   width: 50%;
-  margin: 0 auto 5%;
+  margin: 1% auto;
+
+  @media screen and (max-width: $break-small) {
+    width: 95%;
+  }
 }
 
 .lyrick_action {
@@ -58,5 +62,9 @@
 
   &:hover {
     background-color: darken($red, 10%);
+  }
+
+  @media screen and (max-width: $break-small) {
+    padding: 3%;
   }
 }

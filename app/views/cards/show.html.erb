@@ -1,13 +1,12 @@
+<div class="actions">
+  <%= link_to "Edit", edit_card_path(@card), class: "lyrick_action" %>
+  <%= link_to "Delete", card_path(@card), method: :delete, class: "delete lyrick_action" %>
+  <%= link_to "Return", cards_path, class: "lyrick_action" %>
+</div>
 
 <div class="card_container">
   <div class="card_overlay">
     <h3><%= @card.title %></h3>
     <p><%= @text_collection %></p>
   </div>
-</div>
-
-<div class="actions">
-  <%= link_to "Edit", edit_card_path(@card), class: "lyrick_action" %>
-  <%= link_to "Delete", card_path(@card), method: :delete, class: "delete lyrick_action" %>
-  <%= link_to "Return", cards_path, class: "lyrick_action" %>
 </div>

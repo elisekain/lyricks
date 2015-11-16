@@ -1,7 +1,8 @@
 class CardsController < ApplicationController
 
   def index
-    @cards = current_user.cards
+    # @cards = current_user.cards
+    @cards = Card.all
   end
 
   def new
@@ -21,7 +22,7 @@ class CardsController < ApplicationController
   def show
     @card = Card.find(params[:id])
     @text_collection = @card.lyrics
-    while @text_collection.length < 2000
+    while @text_collection.length < 2200
       @text_collection += @card.lyrics
     end
   end
