@@ -1,9 +1,20 @@
 @import 'vars';
 
+.card_container, .actions {
+  width: 50%;
+  margin: 2% auto;
+
+  @media screen and (max-width: $break-med) {
+    width: 70%;
+  }
+
+  @media screen and (max-width: $break-small) {
+    width: 95%;
+  }
+}
+
 .card_container {
   position: relative;
-  width: 50%;
-  margin: 1% auto;
   padding: 3%;
   border: 1.5px solid $grey;
 
@@ -20,16 +31,16 @@
     font-size: 3.5rem;
     text-align: center;
     width: 80%;
+    margin-top: 30px;
   }
 
-  @media screen and (max-width: $break-med) {
-    width: 70%;
-
+  img {
+    position: absolute;
+    width: 80%;
+    padding: 35% 32% 0 35%;
   }
 
   @media screen and (max-width: $break-small) {
-    width: 95%;
-
     h3 {
       font-size: 2rem;
     }
@@ -39,16 +50,6 @@
 .card_overlay {
   background-color: $tan;
   padding: 3%;
-}
-
-
-.actions {
-  width: 50%;
-  margin: 1% auto;
-
-  @media screen and (max-width: $break-small) {
-    width: 95%;
-  }
 }
 
 .lyrick_action {
