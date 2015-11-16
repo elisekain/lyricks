@@ -8,7 +8,7 @@
 
   <% @cards.each do |card| %>
     <div class="card_preview">
-      <div class="card_overlay_preview">
+      <div class="card_overlay_preview <%= card.color_selection %>">
         <h3><%= link_to card.title, card_path(card) %></h3>
       </div>
     </div>

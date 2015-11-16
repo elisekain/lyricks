@@ -7,14 +7,52 @@
   padding: 2%;
   border: 1.5px solid $grey;
 
-}
-.card_overlay_preview {
-  background-color: $tan;
-  padding: 15% 2%;
-
-  &:hover {
-    background-color: darken($tan, 10%);
+  /* Variable Colors */
+  div.grey {
+    background-color: $grey;
+    &:hover {
+      background-color: darken($grey, 10%);
+    }
   }
+
+  div.red {
+    background-color: $red;
+    &:hover {
+      background-color: darken($red, 10%);
+    }
+  }
+
+  div.orange {
+    background-color: $orange;
+    &:hover {
+      background-color: darken($orange, 10%);
+    }
+  }
+
+  div.blue {
+    background-color: $blue;
+    &:hover {
+      background-color: darken($blue, 10%);
+    }
+  }
+
+  div.green {
+    background-color: $green;
+    &:hover {
+      background-color: darken($green, 10%);
+    }
+  }
+
+  div.purple {
+    background-color: $purple;
+    &:hover {
+      background-color: darken($purple, 10%);
+    }
+  }
+}
+
+.card_overlay_preview {
+  padding: 15% 2%;
 
   h3 {
     text-align: center;

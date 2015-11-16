@@ -18,10 +18,13 @@
   padding: 3%;
   border: 1.5px solid $grey;
 
+  .card_overlay {
+    padding: 3%;
+  }
+
   p {
     text-align: justify;
     font-size: 0.75rem;
-    color: darken($tan, 20%);
   }
 
   h3 {
@@ -45,12 +48,58 @@
       font-size: 2rem;
     }
   }
+
+  /* Variable Colors */
+
+  p.grey {
+    color: darken($grey, 20%);
+  }
+
+  div.grey {
+    background-color: $grey;
+  }
+
+  p.red {
+    color: darken($red, 20%);
+  }
+
+  div.red {
+    background-color: $red;
+  }
+
+  p.orange {
+    color: darken($orange, 20%);
+  }
+
+  div.orange {
+    background-color: $orange;
+  }
+
+  p.blue {
+    color: darken($blue, 20%);
+  }
+
+  div.blue {
+    background-color: $blue;
+  }
+
+  p.green {
+    color: darken($green, 20%);
+  }
+
+  div.green {
+    background-color: $green;
+  }
+
+  p.purple {
+    color: darken($purple, 20%);
+  }
+
+  div.purple {
+    background-color: $purple;
+  }
 }
 
-.card_overlay {
-  background-color: $tan;
-  padding: 3%;
-}
 
 .lyrick_action {
     display: inline-block;

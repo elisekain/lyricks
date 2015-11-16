@@ -5,9 +5,9 @@
 </div>
 
 <div class="card_container">
-  <div class="card_overlay">
+  <div class="card_overlay <%= @card.color_selection %>">
     <h3><%= @card.title %></h3>
     <%= image_tag "#{@card.icon_selection}.svg", alt: "#{@card.icon_selection} icon" %>
-    <p><%= @text_collection %></p>
+    <p class=<%= @card.color_selection %>><%= @text_collection %></p>
   </div>
 </div>
