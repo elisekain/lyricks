@@ -5,7 +5,7 @@
   margin: 0;
   padding: 5% 15% 25% 15%;
   /* Image from unsplash.com by William Iven */
-  background-image: url('speaker.jpeg');
+  background-image: image-url('speaker.jpeg');
   background-position: 0;
 
   @media screen and (max-width: $break-med) {
