@@ -7,6 +7,30 @@
   <%= f.text_area :lyrics, size: "60x12" %>
 
   <fieldset>
+    <legend>Select Title Font</legend>
+
+    <div class="font_select_container">
+      <%= f.radio_button :font_selection, "normal" %>
+      <%= label :card_font_selection, "normal", class: "font_normal" %>
+    </div>
+
+    <div class="font_select_container">
+      <%= f.radio_button :font_selection, "bold" %>
+      <%= label :card_font_selection, "bold", class: "font_bold" %>
+    </div>
+
+    <div class="font_select_container">
+      <%= f.radio_button :font_selection, "print" %>
+      <%= label :card_font_selection, "print", class: "font_print" %>
+    </div>
+
+    <div class="font_select_container">
+      <%= f.radio_button :font_selection, "cursive" %>
+      <%= label :card_font_selection, "cursive", class: "font_cursive" %>
+    </div>
+  </fieldset>
+
+  <fieldset>
     <legend>Select Icon</legend>
 
     <div class="icon_select_container">

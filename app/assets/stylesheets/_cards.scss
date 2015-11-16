@@ -29,7 +29,6 @@
 
   h3 {
     position: absolute;
-    font-family: $script-font;
     color: $white;
     font-size: 3.5rem;
     text-align: center;
@@ -48,6 +47,21 @@
       font-size: 2rem;
     }
   }
+
+  /* Variable Fonts */
+
+  .font_bold {
+    font-family: $headline-font;
+  }
+
+  .font_print {
+    font-family: $script-font;
+  }
+
+  .font_cursive {
+    font-family: $cursive-font;
+  }
+
 
   /* Variable Colors */
 

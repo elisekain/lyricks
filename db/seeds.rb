@@ -12,7 +12,7 @@ users = User.create!([
 ])
 
 cards = Card.create!([
-{title: "September", user: users[0], icon_selection: "heart", color_selection: "red", lyrics:
+{title: "September", user: users[0], icon_selection: "heart", color_selection: "red", font_selection: "bold", lyrics:
 "Do you remember, 21st night of September?
 Love was changing the mind of pretenders
 While chasing the clouds away
@@ -22,7 +22,7 @@ As we danced in the night
 Remember, how the stars stole the night away
 "},
 
-{title: "Bright Lights", user: users[1], icon_selection: "disk", color_selection: "blue", lyrics:
+{title: "Bright Lights", user: users[1], icon_selection: "disk", color_selection: "blue", font_selection: "cursive", lyrics:
 "She got out of town
 On a railway, New York bound
 Took all except my name
@@ -35,7 +35,7 @@ Who will save me
 From all I'm up against out in this world?
 "},
 
-{title: "A Thousand Miles", user: users[2], icon_selection: "headphones", color_selection: "green", lyrics:
+{title: "A Thousand Miles", user: users[2], icon_selection: "headphones", color_selection: "green", font_selection: "print", lyrics:
 "If I could fall into the sky
 Do you think time would pass me by?
 Cause you know I'd walk a thousand miles
@@ -47,7 +47,7 @@ Cause everything's so wrong and I don't belong
 Living in your precious memory
 "},
 
-{title: "Unforgettable", user: users[3], icon_selection: "music", color_selection: "purple", lyrics:
+{title: "Unforgettable", user: users[3], icon_selection: "music", color_selection: "purple", font_selection: "normal", lyrics:
 "Unforgettable
 In every way,
 And forever more
@@ -58,7 +58,7 @@ Thinks that I am
 Unforgettable, too.
 "},
 
-{title: "Every Time You Say Goodbye", user: users[4], icon_selection: "star", color_selection: "orange", lyrics:
+{title: "Every Time You Say Goodbye", user: users[4], icon_selection: "star", color_selection: "orange", font_selection: "cursive", lyrics:
 "There’s a restless feeling knocking at my door today
 There’s a shadow hanging ’round my garden gate
 I read between the lines of words you can’t disguise
@@ -69,7 +69,7 @@ Fallin’ down like rain on the ground
 Every time you say goodbye
 "},
 
-{title: "Angel", user: users[5], icon_selection: "heart", color_selection: "grey", lyrics:
+{title: "Angel", user: users[5], icon_selection: "heart", color_selection: "grey", font_selection: "print", lyrics:
 "And when I go to sleep at night
 I'll thank you for each blessed thing surrounding me
 For every fall I'll ever break
@@ -80,7 +80,7 @@ Never ending providence
 For loving when I had the chance
 "},
 
-{title: "Witchcraft", user: users[6], icon_selection: "disk", color_selection: "red", lyrics:
+{title: "Witchcraft", user: users[6], icon_selection: "disk", color_selection: "red", font_selection: "normal", lyrics:
 "When you arouse the need in me,
 My heart says yes indeed in me,
 Proceed with what your leading me to
@@ -89,7 +89,7 @@ But one I wouldn't switch,
 'Cause there's no nicer witch than you
 "},
 
-{title: "I Really Really Really Really Really Really Like You", user: users[7], icon_selection: "bolt", color_selection: "purple", lyrics:
+{title: "I Really Really Really Really Really Really Like You", user: users[7], icon_selection: "bolt", color_selection: "purple", font_selection: "normal", lyrics:
 "I really wanna stop
 But I just gotta taste for it
 I feel like I could fly with the ball on the moon
@@ -103,7 +103,7 @@ I really really really really really really like you
 And I want you, do you want me, do you want me, too?
 "},
 
-{title: "I Knew You Were Trouble", user: users[8], icon_selection: "headphones", color_selection: "grey", lyrics:
+{title: "I Knew You Were Trouble", user: users[8], icon_selection: "headphones", color_selection: "grey", font_selection: "print", lyrics:
 "I knew you were trouble when you walked in
 So shame on me now
 Flew me to places I'd never been
@@ -117,7 +117,7 @@ Oh, oh, trouble, trouble, trouble
 "},
 
 
-{title: "Breakeven", user: users[9], icon_selection: "star", color_selection: "orange", lyrics:
+{title: "Breakeven", user: users[9], icon_selection: "star", color_selection: "orange", font_selection: "cursive", lyrics:
 "I'm still alive but I'm barely breathing
 Just prayed to a God that I don't believe in
 'Cause I got time while she got freedom
