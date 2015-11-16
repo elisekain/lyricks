@@ -6,5 +6,41 @@
   <%= f.label :lyrics, "Lyric Excerpt" %>
   <%= f.text_area :lyrics, size: "60x12" %>
 
+  <div class="icon_select_container">
+    <%= image_tag "heart.svg", alt: "heart icon" %>
+    <%= f.radio_button :icon_selection, "heart" %>
+    <%= label :icon_selection_heart, "Heart", class: "icon_label" %>
+  </div>
+
+  <div class="icon_select_container">
+    <%= image_tag "star.svg", alt: "star icon" %>
+    <%= f.radio_button :icon_selection, "star" %>
+    <%= label :icon_selection_star, "Star", class: "icon_label" %>
+  </div>
+
+  <div class="icon_select_container">
+    <%= image_tag "music.svg", alt: "music icon" %>
+    <%= f.radio_button :icon_selection, "music" %>
+    <%= label :icon_selection_music, "Music", class: "icon_label" %>
+  </div>
+
+  <div class="icon_select_container">
+    <%= image_tag "disk.svg", alt: "disk icon" %>
+    <%= f.radio_button :icon_selection, "disk" %>
+    <%= label :icon_selection_disk, "Disk", class: "icon_label" %>
+  </div>
+
+  <div class="icon_select_container">
+    <%= image_tag "headphones.svg", alt: "headphones icon" %>
+    <%= f.radio_button :icon_selection, "headphones" %>
+    <%= label :icon_selection_headphones, "Headphones", class: "icon_label" %>
+  </div>
+
+  <div class="icon_select_container">
+    <%= image_tag "bolt.svg", alt: "bolt icon" %>
+    <%= f.radio_button :icon_selection, "bolt" %>
+    <%= label :icon_selection_bolt, "Bolt", class: "icon_label" %>
+  </div>
+
   <%= f.submit "Submit Lyrick", class: "create_lyrick" %>
 <% end %>

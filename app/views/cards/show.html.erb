@@ -7,7 +7,7 @@
 <div class="card_container">
   <div class="card_overlay">
     <h3><%= @card.title %></h3>
-    <%= image_tag 'heart.svg', alt: "heart icon" %>
+    <%= image_tag "#{@card.icon_selection}.svg", alt: "#{@card.icon_selection} icon" %>
     <p><%= @text_collection %></p>
   </div>
 </div>

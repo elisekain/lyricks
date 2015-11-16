@@ -37,7 +37,7 @@
 
   textarea {
     display: block;
-    margin: 0 auto;
+    margin: 0 auto 2%;
     width: 90%;
   }
 
@@ -46,6 +46,24 @@
     padding: 2%;
     margin: 5%;
     font-size: 1.4rem;
+  }
+
+  /* Icon Selections */
+  .icon_label {
+
+  }
+
+  .icon_select_container {
+    display: inline-block;
+    width: 48%;
+
+    // input {
+    //   display: none;
+    // }
+
+    img {
+      opacity: 0.5;
+    }
   }
 
   @media screen and (max-width: $break-small) {

@@ -49,6 +49,6 @@ class CardsController < ApplicationController
 
   private
   def card_params
-    params.require(:card).permit(:title, :lyrics)
+    params.require(:card).permit(:title, :lyrics, :icon_selection)
   end
 end
