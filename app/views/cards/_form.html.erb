@@ -34,79 +34,92 @@
     <legend>Select Icon</legend>
 
     <div class="icon_select_container">
-
       <%= f.radio_button :icon_selection, "heart" %>
-      <%= image_tag "heart.svg", alt: "heart icon" %>
-      <%= label :card_icon_selection, "heart", class: "icon_label" %>
+      <%= label_tag "card_icon_selection_heart" do %>
+        <%= image_tag "heart.svg", alt: "heart icon" %>
+      <% end %>
     </div>
 
     <div class="icon_select_container">
       <%= f.radio_button :icon_selection, "star" %>
-      <%= image_tag "star.svg", alt: "star icon" %>
-      <%= label :card_icon_selection, "star", class: "icon_label" %>
+      <%= label_tag "card_icon_selection_star" do %>
+        <%= image_tag "star.svg", alt: "star icon" %>
+      <% end %>
     </div>
 
     <div class="icon_select_container">
       <%= f.radio_button :icon_selection, "music" %>
-      <%= image_tag "music.svg", alt: "music icon" %>
-      <%= label :card_icon_selection, "music", class: "icon_label" %>
+      <%= label_tag "card_icon_selection_music" do %>
+        <%= image_tag "music.svg", alt: "music icon" %>
+      <% end %>
     </div>
 
     <div class="icon_select_container">
       <%= f.radio_button :icon_selection, "disk" %>
-      <%= image_tag "disk.svg", alt: "disk icon" %>
-      <%= label :card_icon_selection, "disk", class: "icon_label" %>
+      <%= label_tag "card_icon_selection_disk" do %>
+        <%= image_tag "disk.svg", alt: "disk icon" %>
+      <% end %>
     </div>
 
     <div class="icon_select_container">
       <%= f.radio_button :icon_selection, "headphones" %>
-      <%= image_tag "headphones.svg", alt: "headphones icon" %>
-      <%= label :card_icon_selection, "headphones", class: "icon_label" %>
+      <%= label_tag "card_icon_selection_headphones" do %>
+        <%= image_tag "headphones.svg", alt: "headphones icon" %>
+      <% end %>
     </div>
 
     <div class="icon_select_container">
       <%= f.radio_button :icon_selection, "bolt" %>
-      <%= image_tag "bolt.svg", alt: "bolt icon" %>
-      <%= label :card_icon_selection, "bolt", class: "icon_label" %>
+      <%= label_tag "card_icon_selection_bolt" do %>
+        <%= image_tag "bolt.svg", alt: "bolt icon" %>
+      <% end %>
     </div>
+
   </fieldset>
 
   <fieldset>
     <legend>Select Color</legend>
+
     <div class="color_select_container">
-      <div class="grey_color color_pick"></div>
       <%= f.radio_button :color_selection, "grey" %>
-      <%= label :card_color_selection, "grey", class: "color_label" %>
+      <%= label_tag "card_color_selection_grey" do %>
+        <div class="grey_color color_pick"></div>
+      <% end %>
     </div>
 
     <div class="color_select_container">
-      <div class="red_color color_pick"></div>
       <%= f.radio_button :color_selection, "red" %>
-      <%= label :card_color_selection, "red", class: "color_label" %>
+      <%= label_tag "card_color_selection_red" do %>
+        <div class="red_color color_pick"></div>
+      <% end %>
     </div>
 
-    <div class="icon_select_container">
-      <div class="orange_color color_pick"></div>
+    <div class="color_select_container">
       <%= f.radio_button :color_selection, "orange" %>
-      <%= label :card_color_selection, "orange", class: "color_label" %>
+      <%= label_tag "card_color_selection_orange" do %>
+        <div class="orange_color color_pick"></div>
+      <% end %>
     </div>
 
-    <div class="icon_select_container">
-      <div class="blue_color color_pick"></div>
+    <div class="color_select_container">
       <%= f.radio_button :color_selection, "blue" %>
-      <%= label :card_color_selection, "blue", class: "color_label" %>
+      <%= label_tag "card_color_selection_blue" do %>
+        <div class="blue_color color_pick"></div>
+      <% end %>
     </div>
 
-    <div class="icon_select_container">
-      <div class="green_color color_pick"></div>
+    <div class="color_select_container">
       <%= f.radio_button :color_selection, "green" %>
-      <%= label :card_color_selection, "green", class: "color_label" %>
+      <%= label_tag "card_color_selection_green" do %>
+        <div class="green_color color_pick"></div>
+      <% end %>
     </div>
 
-    <div class="icon_select_container">
-      <div class="purple_color color_pick"></div>
+    <div class="color_select_container">
       <%= f.radio_button :color_selection, "purple" %>
-      <%= label :card_color_selection, "purple", class: "icon_label" %>
+      <%= label_tag "card_color_selection_purple" do %>
+        <div class="purple_color color_pick"></div>
+      <% end %>
     </div>
   </fieldset>
 
