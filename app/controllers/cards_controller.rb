@@ -28,7 +28,7 @@ class CardsController < ApplicationController
     @card = Card.find(params[:id])
     @tags = Tag.all
     @text_collection = @card.lyrics
-    while @text_collection.length < 2200
+    while @text_collection.length < 2400
       @text_collection += @card.lyrics
     end
   end
@@ -80,7 +80,7 @@ class CardsController < ApplicationController
   def sort_user
     @sort_tag = Tag.find(params[:tag_id])
     @cards = Card.includes(:tags).where('tags.title = ?', @sort_tag.title).references(:tags)
-    @cards = @cards.select { |card|  card.user == current_user  }  
+    @cards = @cards.select { |card|  card.user == current_user  }
     @tags = Tag.all
     render :index
   end

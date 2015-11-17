@@ -13,6 +13,7 @@
   }
 }
 
+/* Card */
 .card_container {
   position: relative;
   padding: 3%;
@@ -24,7 +25,7 @@
 
   p {
     text-align: justify;
-    font-size: 0.75rem;
+    font-size: 0.7rem;
   }
 
   h3 {
@@ -49,7 +50,6 @@
   }
 
   /* Variable Fonts */
-
   .font_bold {
     font-family: $headline-font;
   }
@@ -64,7 +64,6 @@
 
 
   /* Variable Colors */
-
   div.grey {
     @include card-create($grey);
   }
@@ -90,55 +89,42 @@
   }
 }
 
-
+/* Actions */
 .lyrick_action {
     display: inline-block;
     background-color: $grey;
     color: $white;
-    padding: 1.5%;
+    padding: 3.5%;
     min-width: 70px;
     text-align: center;
-    margin: 0 0.5%;
+    margin: 0.5%;
 
   &:hover {
     background-color: darken($grey, 10%);
   }
 
   @media screen and (max-width: $break-small) {
-    padding: 3%;
+    padding: 2%;
   }
 }
 
+/* Tags */
 .tag_actions {
   padding: 2%;
   text-align: center;
 
   .tagged, .not-tagged {
     display: inline-block;
-    padding: 2.5% 1%;
+    padding: 4% 1%;
     margin: 1%;
     width: 25%;
   }
 
   .tagged {
-    background-color: $red;
-    color: $white;
-
-    &:hover {
-      background-color: $white;
-      color: $red;
-      border: 2px solid $red;
-    }
+    @include activate-colors($red, $white);
   }
 
   .not-tagged {
-    background-color: $white;
-    border: 2px solid $red;
-    opacity: 0.5;
-
-    &:hover {
-      background-color: $red;
-      color: $white;
-    }
+    @include activate-colors($white, $red);
   }
 }

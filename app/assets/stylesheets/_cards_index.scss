@@ -4,31 +4,33 @@
   display: inline-block;
   width: 20%;
   text-align: right;
+  padding-left: 3%;
 
   .lyrick_action {
-    padding: 6%;
+    padding: 10%;
   }
 
   @media screen and (max-width: $break-small) {
     margin-left: 2%;
 
     .lyrick_action {
-      padding: 6%;
+      padding: 8%;
     }
   }
 }
 
 .tags {
-
-  padding: 2%;
+  padding: 0.5% 2%;
   text-align: center;
-  .tag_link {
-    border: 2px solid $red;
-    padding: 1%;
 
-    &:hover {
-      background-color: $red;
-      color: $white;
+  .tag_link {
+    display: inline-block;
+    margin: 2% 0.5%;
+    padding: 1.5%;
+    @include activate-colors($white, $red);
+
+    @media screen and (max-width: $break-small) {
+      padding: 2.5%;
     }
   }
 
@@ -42,7 +44,6 @@
   border: 1.5px solid $grey;
 
   /* Variable Fonts */
-
   .font_bold {
     font-family: $headline-font;
   }
@@ -100,8 +101,6 @@
     text-align: center;
     color: $white;
   }
-
-
 }
 
 .create_new {

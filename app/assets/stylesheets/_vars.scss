@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700|Bevan|Covered+By+Your+Grace|Dancing+Script:700);
 
 $black: #0D1B1E;
-$red: #74282E;
+$red: #9a353d;
 $tan: #B8B09D;
 $grey: #4B5358;
 $white: #F4F4F4;
@@ -40,4 +40,16 @@ $break-med: 920px;
 @mixin color-palette($color) {
   background-color: $color;
   border: 2px solid darken($color, 10%);
+}
+
+@mixin activate-colors($color1, $color2) {
+  background-color: $color1;
+  color: $color2;
+  border: 2px solid $color2;
+
+  &:hover {
+    background-color: $color2;
+    color: $color1;
+    border: 2px solid $color1;
+  }
 }

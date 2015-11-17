@@ -63,7 +63,6 @@
   }
 
   /* Custom Selections */
-
   .icon_select_container, .color_select_container {
     width: 30%;
   }
@@ -84,7 +83,6 @@
     }
 
     /* Checked State */
-
     input:checked ~ label {
       color: $white;
     }
@@ -142,8 +140,6 @@
   .purple_color {
     @include color-palette($purple);
   }
-
-
 
   @media screen and (max-width: $break-small) {
     label {
