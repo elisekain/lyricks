@@ -68,6 +68,14 @@ class CardsController < ApplicationController
     redirect_to card_path(@card)
   end
 
+  # sort by tag
+  def sort
+    @sort_tag = Tag.find(params[:tag_id])
+    @cards = Card.includes(:tags).where('tags.title = ?', @sort_tag.title).references(:tags)
+    @tags = Tag.all
+    render :browse
+  end
+
   private
   def card_params
     params.require(:card).permit(:title, :lyrics, :icon_selection, :color_selection, :font_selection, :private)

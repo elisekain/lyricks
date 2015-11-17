@@ -141,3 +141,20 @@ While I'm wide awake she's no trouble sleeping
 "},
 
 ])
+
+cards[0].card_tags.create(tag: tags[0])
+cards[1].card_tags.create(tag: tags[1])
+cards[2].card_tags.create(tag: tags[2])
+cards[3].card_tags.create(tag: tags[3])
+cards[4].card_tags.create(tag: tags[4])
+cards[5].card_tags.create(tag: tags[5])
+cards[6].card_tags.create(tag: tags[6])
+cards[7].card_tags.create(tag: tags[7])
+cards[8].card_tags.create(tag: tags[8])
+cards[0].card_tags.create(tag: tags[2])
+cards[1].card_tags.create(tag: tags[3])
+cards[2].card_tags.create(tag: tags[4])
+cards[3].card_tags.create(tag: tags[5])
+cards[4].card_tags.create(tag: tags[6])
+cards[5].card_tags.create(tag: tags[7])
+cards[6].card_tags.create(tag: tags[8])

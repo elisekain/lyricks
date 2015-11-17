@@ -6,7 +6,7 @@
 
 <div class="tags">
   <% @tags.each do |tag| %>
-    <%= link_to tag.title.titleize, cards_browse_path, class: "tag_link" %>
+    <%= link_to tag.title.titleize, "/cards/browse/#{tag.id}", method: :get, class: "tag_link" %>
   <% end %>
 </div>
 
