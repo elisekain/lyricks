@@ -36,3 +36,8 @@ $break-med: 920px;
     background-color: darken($color, 10%);
   }
 }
+
+@mixin color-palette($color) {
+  background-color: $color;
+  border: 2px solid darken($color, 10%);
+}

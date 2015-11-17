@@ -120,33 +120,27 @@
   }
 
   .grey_color {
-    background-color: $grey;
-    border: 2px solid darken($grey, 10%);
+    @include color-palette($grey);
   }
 
   .red_color {
-    background-color: $red;
-    border: 2px solid darken($red, 10%);
+    @include color-palette($red);
   }
 
   .orange_color {
-    background-color: $orange;
-    border: 2px solid darken($orange, 10%);
+    @include color-palette($orange);
   }
 
   .blue_color {
-    background-color: $blue;
-    border: 2px solid darken($blue, 10%);
+    @include color-palette($blue);
   }
 
   .green_color {
-    background-color: $green;
-    border: 2px solid darken($green, 10%);
+    @include color-palette($green);
   }
 
   .purple_color {
-    background-color: $purple;
-    border: 2px solid darken($purple, 10%);
+    @include color-palette($purple);
   }
 
 
