@@ -1,5 +1,14 @@
 @import 'vars';
 
+.sub_nav {
+  display: inline-block;
+  width: 35%;
+
+  .lyrick_action {
+    padding: 4%;
+  }
+}
+
 .card_preview {
   display: inline-block;
   width: 30%;

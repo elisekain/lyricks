@@ -1,8 +1,8 @@
-<div class="actions">
+<h1 class="heading">Browse Lyricks</h1>
+
+<div class="sub_nav">
   <%= link_to "My Lyricks", cards_path, class: "lyrick_action" %>
 </div>
-
-<h1 class="heading">Browse Lyricks</h1>
 
 <% @cards.each do |card| %>
   <% if !card.private %>

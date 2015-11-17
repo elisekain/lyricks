@@ -31,8 +31,10 @@ body {
   }
 
   .heading {
+    display: inline-block;
+    width: 40%;
     font-family: $script-font;
-    text-align: center;
+    text-align: left;
     padding: 3%;
     font-size: 3rem;
   }
