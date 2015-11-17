@@ -7,6 +7,14 @@
   .lyrick_action {
     padding: 4%;
   }
+
+  @media screen and (max-width: $break-small) {
+    margin-left: 2%;
+
+    .lyrick_action {
+      padding: 6%;
+    }
+  }
 }
 
 .card_preview {
@@ -73,6 +81,16 @@
     &:hover {
       background-color: darken($purple, 10%);
     }
+  }
+
+  @media screen and (max-width: $break-med) {
+  width: 45%;
+  margin: 2%;
+  }
+
+  @media screen and (max-width: $break-small) {
+  width: 75%;
+  margin: 2% 12%;
   }
 }
 

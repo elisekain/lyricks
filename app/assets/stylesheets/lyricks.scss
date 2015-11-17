@@ -37,5 +37,13 @@ body {
     text-align: left;
     padding: 3%;
     font-size: 3rem;
+
+    @media screen and (max-width: $break-med) {
+      width: 60%
+    }
+
+    @media screen and (max-width: $break-small) {
+      width: 75%
+    }
   }
 }
