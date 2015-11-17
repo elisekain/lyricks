@@ -6,10 +6,7 @@ Rails.application.routes.draw do
 
   resources :cards
 
-  resources :tags do
-      member do
-        post 'add_to_card'
-        delete 'remove_from_card'
-      end
-    end
+  post "/cards/:id/tag/:tag_id" => "cards#add_tag"
+  delete "/cards/:id/tag/:tag_id" => "cards#remove_tag"
+
 end

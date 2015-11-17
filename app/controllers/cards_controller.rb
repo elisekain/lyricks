@@ -53,18 +53,19 @@ class CardsController < ApplicationController
     redirect_to cards_path
   end
 
-  # # add tag
-  def add_to_card
+  def add_tag
     @card = Card.find(params[:id])
+    @tag = Tag.find(params[:tag_id])
+    @card.card_tags.create(tag: @tag)
     redirect_to card_path(@card)
   end
   #
   # remove tag
-  def remove_from_card
-    @song = Song.find(params[:id])
-    @artist = @song.artist
-    @song.favorites.where(user: current_user).destroy_all
-    redirect_to artist_path(@artist)
+  def remove_tag
+    @card = Card.find(params[:id])
+    @tag = Tag.find(params[:tag_id])
+    @card.card_tags.where(tag: @tag).destroy_all
+    redirect_to card_path(@card)
   end
 
   private

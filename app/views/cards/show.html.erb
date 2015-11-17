@@ -17,10 +17,15 @@
   </div>
 </div>
 
-<!-- <% @tags.each do |tag| %>
-  <% if tag %>
-    <%#= link_to tag.title, remove_from_card_tag(@card), method: :delete, class: "tagged" %>
-  <% else %>
-    <%#= link_to tag.title, add_to_card_tag_path(@card), method: :post, class: "not-tagged" %>
-  <% end %>
-<% end %> -->
+<div class="testing">
+<% @card.tags.each do |tag| %>
+<h1><%= tag.title %></h1>
+<% end %>
+</div>
+
+<div class="tags">
+<% @tags.each do |tag| %>
+  <%= link_to tag.title.titleize, "/cards/#{@card.id}/tag/#{tag.id}", method: :post, class: "tag_link" %>
+  <%= link_to tag.title.titleize, "/cards/#{@card.id}/tag/#{tag.id}", method: :delete, class: "tag_link" %>
+<% end %>
+</div>
