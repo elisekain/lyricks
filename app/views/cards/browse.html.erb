@@ -4,6 +4,12 @@
   <%= link_to "My Lyricks", cards_path, class: "lyrick_action" %>
 </div>
 
+<div class="tags">
+  <% @tags.each do |tag| %>
+    <%= link_to tag.title.titleize, cards_browse_path, class: "tag_link" %>
+  <% end %>
+</div>
+
 <% @cards.each do |card| %>
   <% if !card.private %>
     <%= link_to card_path(card) do %>

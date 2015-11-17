@@ -4,6 +4,12 @@
   <%= link_to "Browse Lyricks", cards_browse_path, class: "lyrick_action" %>
 </div>
 
+<div class="tags">
+  <% @tags.each do |tag| %>
+    <%= link_to tag.title.titleize, cards_browse_path, class: "tag_link" %>
+  <% end %>
+</div>
+
 <%= link_to new_card_path do %>
   <div class="card_preview">
     <div class="card_overlay_preview create_new">

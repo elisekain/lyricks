@@ -11,6 +11,19 @@ users = User.create!([
   {email: "bonnie@example.com", username: "bonnie", password: "bonniepassword", password_confirmation: "bonniepassword"},
 ])
 
+tags = Tag.create!([
+  {title: "rock"},
+  {title: "pop"},
+  {title: "classical"},
+  {title: "country"},
+  {title: "electronic"},
+  {title: "jazz"},
+  {title: "gospel"},
+  {title: "hip hop / rap"},
+  {title: "world music"},
+  {title: "folk"}
+])
+
 cards = Card.create!([
 {title: "September", user: users[0], icon_selection: "heart", color_selection: "red", font_selection: "bold", lyrics:
 "Do you remember, 21st night of September?

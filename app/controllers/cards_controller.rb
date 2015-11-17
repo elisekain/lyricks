@@ -2,10 +2,12 @@ class CardsController < ApplicationController
 
   def index
     @cards = current_user.cards
+    @tags = Tag.all
   end
 
   def browse
     @cards = Card.all
+    @tags = Tag.all
   end
 
   def new
