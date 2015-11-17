@@ -32,18 +32,15 @@ body {
 
   .heading {
     display: inline-block;
-    width: 40%;
+    width: 60%;
     font-family: $script-font;
     text-align: left;
     padding: 3%;
     font-size: 3rem;
 
     @media screen and (max-width: $break-med) {
-      width: 60%
-    }
-
-    @media screen and (max-width: $break-small) {
-      width: 75%
+      width: 100%;
+      font-size: 2rem;
     }
   }
 }

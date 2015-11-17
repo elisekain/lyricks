@@ -2,10 +2,11 @@
 
 .sub_nav {
   display: inline-block;
-  width: 35%;
+  width: 20%;
+  text-align: right;
 
   .lyrick_action {
-    padding: 4%;
+    padding: 6%;
   }
 
   @media screen and (max-width: $break-small) {

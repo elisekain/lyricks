@@ -1,4 +1,4 @@
-<h1 class="heading">Browse Lyricks</h1>
+<h1 class="heading">Browse Lyricks<%= @sort_tag ? ": #{@sort_tag.title.titleize}" : ""%></h1>
 
 <div class="sub_nav">
   <%= link_to "My Lyricks", cards_path, class: "lyrick_action" %>

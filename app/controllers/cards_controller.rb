@@ -68,12 +68,21 @@ class CardsController < ApplicationController
     redirect_to card_path(@card)
   end
 
-  # sort by tag
+  # sort all by tag
   def sort
     @sort_tag = Tag.find(params[:tag_id])
     @cards = Card.includes(:tags).where('tags.title = ?', @sort_tag.title).references(:tags)
     @tags = Tag.all
     render :browse
+  end
+
+  # sort user's by tag
+  def sort_user
+    @sort_tag = Tag.find(params[:tag_id])
+    @cards = Card.includes(:tags).where('tags.title = ?', @sort_tag.title).references(:tags)
+    @cards = @cards.select { |card|  card.user == current_user  }  
+    @tags = Tag.all
+    render :index
   end
 
   private

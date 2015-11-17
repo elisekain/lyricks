@@ -1,4 +1,4 @@
-<h1 class="heading">My Lyricks</h1>
+<h1 class="heading">My Lyricks<%= @sort_tag ? ": #{@sort_tag.title.titleize}" : ""%></h1>
 
 <div class="sub_nav">
   <%= link_to "Browse Lyricks", cards_browse_path, class: "lyrick_action" %>
@@ -6,7 +6,7 @@
 
 <div class="tags">
   <% @tags.each do |tag| %>
-    <%= link_to tag.title.titleize, cards_browse_path, class: "tag_link" %>
+    <%= link_to tag.title.titleize, "/cards/user/#{tag.id}", method: :get, class: "tag_link" %>
   <% end %>
 </div>
 

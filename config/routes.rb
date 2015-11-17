@@ -4,6 +4,7 @@ Rails.application.routes.draw do
 
   get "cards/browse" => "cards#browse"
   get "/cards/browse/:tag_id" => "cards#sort"
+  get "/cards/user/:tag_id" => "cards#sort_user"
 
   resources :cards
 
