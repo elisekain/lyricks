@@ -1,10 +1,18 @@
 @import 'vars';
 
-
 .lyrick_form {
   width: 50%;
   margin: 3% auto;
   background-color: lighten($grey, 20%);
+
+  .form_heading {
+    display: inline-block;
+    width: 100%;
+    font-family: $script-font;
+    padding: 3%;
+    font-size: 3rem;
+    text-align: center;
+  }
 
   @media screen and (max-width: $break-med) {
     width: 70%;

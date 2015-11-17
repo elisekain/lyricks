@@ -3,5 +3,6 @@ Rails.application.routes.draw do
   root to: "cards#index"
 
   get "cards/browse" => "cards#browse"
+
   resources :cards
 end
