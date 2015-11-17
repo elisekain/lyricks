@@ -24,3 +24,15 @@ $break-med: 920px;
       -ms-border-radius: $radius;
           border-radius: $radius;
 }
+
+@mixin card-create($color) {
+  background-color: $color;
+  color: darken($color, 20%);
+}
+
+@mixin card-preview-create($color) {
+  background-color: $color;
+  &:hover {
+    background-color: darken($color, 10%);
+  }
+}

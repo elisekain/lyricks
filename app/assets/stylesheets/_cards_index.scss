@@ -58,45 +58,27 @@
 
   /* Variable Colors */
   div.grey {
-    background-color: $grey;
-    &:hover {
-      background-color: darken($grey, 10%);
-    }
+    @include card-preview-create($grey);
   }
 
   div.red {
-    background-color: $red;
-    &:hover {
-      background-color: darken($red, 10%);
-    }
+    @include card-preview-create($red);
   }
 
   div.orange {
-    background-color: $orange;
-    &:hover {
-      background-color: darken($orange, 10%);
-    }
+    @include card-preview-create($orange);
   }
 
   div.blue {
-    background-color: $blue;
-    &:hover {
-      background-color: darken($blue, 10%);
-    }
+    @include card-preview-create($blue);
   }
 
   div.green {
-    background-color: $green;
-    &:hover {
-      background-color: darken($green, 10%);
-    }
+    @include card-preview-create($green);
   }
 
   div.purple {
-    background-color: $purple;
-    &:hover {
-      background-color: darken($purple, 10%);
-    }
+    @include card-preview-create($purple);
   }
 
   @media screen and (max-width: $break-med) {
@@ -122,12 +104,8 @@
 }
 
 .create_new {
-  background-color: $red;
+  @include card-preview-create($red);
   padding: 15% 2%;
-
-  &:hover {
-    background-color: darken($red, 10%);
-  }
 
   h3 {
     display: inline-block;

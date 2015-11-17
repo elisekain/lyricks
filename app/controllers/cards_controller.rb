@@ -26,6 +26,7 @@ class CardsController < ApplicationController
 
   def show
     @card = Card.find(params[:id])
+    @tags = Tag.all
     @text_collection = @card.lyrics
     while @text_collection.length < 2200
       @text_collection += @card.lyrics
@@ -50,6 +51,20 @@ class CardsController < ApplicationController
     @card = Card.find(params[:id])
     @card.destroy
     redirect_to cards_path
+  end
+
+  # # add tag
+  def add_to_card
+    @card = Card.find(params[:id])
+    redirect_to card_path(@card)
+  end
+  #
+  # remove tag
+  def remove_from_card
+    @song = Song.find(params[:id])
+    @artist = @song.artist
+    @song.favorites.where(user: current_user).destroy_all
+    redirect_to artist_path(@artist)
   end
 
   private

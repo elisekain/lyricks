@@ -65,52 +65,28 @@
 
   /* Variable Colors */
 
-  p.grey {
-    color: darken($grey, 20%);
-  }
-
   div.grey {
-    background-color: $grey;
-  }
-
-  p.red {
-    color: darken($red, 20%);
+    @include card-create($grey);
   }
 
   div.red {
-    background-color: $red;
-  }
-
-  p.orange {
-    color: darken($orange, 20%);
+    @include card-create($red);
   }
 
   div.orange {
-    background-color: $orange;
-  }
-
-  p.blue {
-    color: darken($blue, 20%);
+    @include card-create($orange);
   }
 
   div.blue {
-    background-color: $blue;
-  }
-
-  p.green {
-    color: darken($green, 20%);
+    @include card-create($blue);
   }
 
   div.green {
-    background-color: $green;
-  }
-
-  p.purple {
-    color: darken($purple, 20%);
+    @include card-create($green);
   }
 
   div.purple {
-    background-color: $purple;
+    @include card-create($purple);
   }
 }
 
