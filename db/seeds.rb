@@ -21,7 +21,6 @@ tags = Tag.create!([
   {title: "gospel"},
   {title: "hip hop / rap"},
   {title: "world music"},
-  {title: "folk"}
 ])
 
 cards = Card.create!([

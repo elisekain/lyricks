@@ -17,15 +17,14 @@
   </div>
 </div>
 
-<div class="testing">
-<% @card.tags.each do |tag| %>
-<h1><%= tag.title %></h1>
+<% if current_user.id == @card.user_id %>
+  <div class="tag_actions">
+  <% @tags.each do |tag| %>
+    <% if @card.tags.include? tag %>
+      <%= link_to tag.title.titleize, "/cards/#{@card.id}/tag/#{tag.id}", method: :delete, class: "tagged" %>
+    <% else %>
+      <%= link_to tag.title.titleize, "/cards/#{@card.id}/tag/#{tag.id}", method: :post, class: "not-tagged" %>
+    <% end %>
+  <% end %>
+  </div>
 <% end %>
-</div>
-
-<div class="tags">
-<% @tags.each do |tag| %>
-  <%= link_to tag.title.titleize, "/cards/#{@card.id}/tag/#{tag.id}", method: :post, class: "tag_link" %>
-  <%= link_to tag.title.titleize, "/cards/#{@card.id}/tag/#{tag.id}", method: :delete, class: "tag_link" %>
-<% end %>
-</div>

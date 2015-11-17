@@ -1,6 +1,6 @@
 @import 'vars';
 
-.card_container, .actions {
+.card_container, .actions, .tag_actions {
   width: 50%;
   margin: 2% auto;
 
@@ -106,5 +106,39 @@
 
   @media screen and (max-width: $break-small) {
     padding: 3%;
+  }
+}
+
+.tag_actions {
+  padding: 2%;
+  text-align: center;
+
+  .tagged, .not-tagged {
+    display: inline-block;
+    padding: 2.5% 1%;
+    margin: 1%;
+    width: 25%;
+  }
+
+  .tagged {
+    background-color: $red;
+    color: $white;
+
+    &:hover {
+      background-color: $white;
+      color: $red;
+      border: 2px solid $red;
+    }
+  }
+
+  .not-tagged {
+    background-color: $white;
+    border: 2px solid $red;
+    opacity: 0.5;
+
+    &:hover {
+      background-color: $red;
+      color: $white;
+    }
   }
 }
