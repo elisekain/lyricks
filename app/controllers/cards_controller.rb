@@ -16,9 +16,10 @@ class CardsController < ApplicationController
   end
 
   def create
-    @card = current_user.cards.create!(card_params)
+    @card = current_user.cards.create(card_params)
     if @card.save
       flash[:notice] = "#{@card.title} was successfully created."
+      flash[:notice] = "#{@card.errors[:title]}"
       redirect_to cards_path
     else
       render :new
