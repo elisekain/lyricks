@@ -11,6 +11,6 @@ Rails.application.routes.draw do
   post "/cards/:id/tag/:tag_id" => "cards#add_tag"
   delete "/cards/:id/tag/:tag_id" => "cards#remove_tag"
 
-  root to: "cards#index"
+  root to: "cards#browse"
 
 end

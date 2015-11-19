@@ -71,6 +71,7 @@ class CardsController < ApplicationController
     render :index
   end
 
+
   private
   def card_params
     params.require(:card).permit(:title, :lyrics, :icon_selection, :color_selection, :font_selection, :private)
