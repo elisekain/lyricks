@@ -11,6 +11,8 @@ It allows the user to:
 - view other user's cards (but not edit/delete their cards)
 - browse cards by genre
 
+Lyricks also includes basic model tests using RSpec.
+
 ### Technologies Used
 
 - Ruby

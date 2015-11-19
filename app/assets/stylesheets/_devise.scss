@@ -25,6 +25,11 @@
   a {
     padding: 2%;
     color: $white;
+
+    .back {
+      display: inline-block;
+      margin: 40%;
+    }
   }
 
   h2 {
@@ -38,6 +43,14 @@
     width: 90%;
     margin: 0 5%;
   }
+
+  .delete {
+    font-size: 1rem;
+    padding: 2%;
+    @include border-radius(5px);
+    border: none;
+    margin: 3%;
+  }
 }
 
 .field {
@@ -46,11 +59,15 @@
 
 label {
   display: inline-block;
-  width: 125px;
+  width: 155px;
 }
 
 input {
   color: $grey;
+}
+
+.actions {
+  width: 90%;
 }
 
 /* Submit Buttons on Forms */
@@ -60,7 +77,7 @@ input {
   background-color: $red;
   border: none;
   padding: 3.5% 6%;
-  margin: 2%;
+  margin: 2.5%;
   @include border-radius(5px);
 
   &:hover {
