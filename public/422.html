@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>The change you wanted was rejected (422)</title>
+  <title>Lyricks | 422 Error</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href='https://fonts.googleapis.com/css?family=Bevan|Covered+By+Your+Grace|Montserrat' rel='stylesheet' type='text/css'>
   <style>
   body {
-    background-color: #EFEFEF;
-    color: #2E2F30;
+    background-color: #0D1B1E;
+    color: #0D1B1E;
     text-align: center;
-    font-family: arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     margin: 0;
+    padding: 5% 20% 25% 15%;
   }
 
   div.dialog {
@@ -23,18 +25,32 @@
     border-right-color: #999;
     border-left-color: #999;
     border-bottom-color: #BBB;
-    border-top: #B00100 solid 4px;
-    border-top-left-radius: 9px;
-    border-top-right-radius: 9px;
+    border-top: #9a353d solid 4px;
+    border-radius: 10px;
     background-color: white;
     padding: 7px 12% 0;
     box-shadow: 0 3px 8px rgba(50, 50, 50, 0.17);
   }
 
   h1 {
-    font-size: 100%;
-    color: #730E15;
+    font-family: 'Bevan', cursive;
+    font-size: 2rem;;
+    color: #9a353d;
     line-height: 1.5em;
+  }
+
+  span {
+    font-family: 'Covered By Your Grace', cursive;
+    font-size: 2.5rem;
+  }
+
+  a {
+    text-decoration: none;
+    color: #4B5358;
+  }
+
+  a:hover {
+    color: #0D1B1E;
   }
 
   div.dialog > p {
@@ -55,13 +71,14 @@
 </head>
 
 <body>
-  <!-- This file lives in public/422.html -->
+  <!-- This file lives in public/500.html -->
   <div class="dialog">
     <div>
-      <h1>The change you wanted was rejected.</h1>
-      <p>Maybe you tried to change something you didn't have access to.</p>
+      <h1>Lyricks: <span>422 Error</span></h1>
+      <p>The change you wanted was rejected.</p>
+      <h2><a href="/">My Lyricks Home</a></h2>
+      <h2><a href="/cards/browse">Browse Lyricks</a></h2>
     </div>
-    <p>If you are the application owner check the logs for more information.</p>
   </div>
 </body>
 </html>
