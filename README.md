@@ -8,7 +8,7 @@ It allows the user to:
 - select the card's text color and font
 - make the card public or private
 - add genre tags to a card
-- view other user's cards (but not edit/delete their cards)
+- view other user's public cards (but not edit/delete their cards)
 - browse cards by genre
 - edit/delete their profile
 - upload a profile picture
