@@ -6,7 +6,6 @@ class CardsController < ApplicationController
 
   def index
     @cards = current_user.cards
-    @profile_pic = current_user.profile_pic
   end
 
   def browse

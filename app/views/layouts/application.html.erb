@@ -17,8 +17,8 @@
         <li><%= link_to 'Edit Profile', edit_user_registration_path %></li>
 
         <li class="profile">
-        <% if @profile_pic %>
-          <%= image_tag @profile_pic, alt: "#{current_user.username} profile pic", class: "profile_pic"%>
+        <% if current_user.profile_pic %>
+          <%= image_tag current_user.profile_pic, alt: "#{current_user.username} profile pic", class: "profile_pic"%>
         <% end %>
         </li>
       <% else %>
