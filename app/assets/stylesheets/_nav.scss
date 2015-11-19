@@ -45,8 +45,20 @@ nav {
   p {
     position: absolute;
     left: 35%;
-    top: 5%;
+    top: 3%;
     color: $white;
     padding-bottom: 3%;
+    width: 30%;
+    text-align: center;
+
+    @media screen and (max-width: $break-med) {
+      width: 50%;
+      left: 30%;
+    }
+
+    @media screen and (max-width: $break-small) {
+      font-size: 0.85rem;
+    }
   }
+
 }

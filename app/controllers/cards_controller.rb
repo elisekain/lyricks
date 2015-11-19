@@ -2,6 +2,7 @@ class CardsController < ApplicationController
   before_action :set_card, only: [:show, :edit, :update, :destroy, :add_tag, :remove_tag]
   before_action :set_tags, only: [:index, :browse, :show, :sort, :sort_user]
   before_action :set_tag, only: [:add_tag, :remove_tag, :sort, :sort_user]
+  before_action :sort_by_tag, only: [:sort, :sort_user]
 
   def index
     @cards = current_user.cards
@@ -19,18 +20,15 @@ class CardsController < ApplicationController
     @card = current_user.cards.create(card_params)
     if @card.save
       flash[:notice] = "#{@card.title} was successfully created."
-      flash[:notice] = "#{@card.errors[:title]}"
       redirect_to cards_path
     else
+      flash[:alert] = "Lyrick was not successfully created: 'title' and 'lyric excerpt' are required fields."
       render :new
     end
   end
 
   def show
-    @text_collection = @card.lyrics
-    while @text_collection.length < 2400
-      @text_collection += @card.lyrics
-    end
+    @text_collection = Card.lengthen(@card.lyrics)
   end
 
   def edit
@@ -41,6 +39,7 @@ class CardsController < ApplicationController
       flash[:notice] = "#{@card.title} was successfully updated."
       redirect_to card_path(@card)
     else
+    flash[:alert] = "Lyrick was not successfully created: 'title' and 'lyric excerpt' are required fields."
       render :edit
     end
   end
@@ -63,13 +62,11 @@ class CardsController < ApplicationController
 
   # sort all by tag
   def sort
-    @cards = Card.includes(:tags).where('tags.title = ?', @sort_tag.title).references(:tags)
     render :browse
   end
 
   # sort user's by tag
   def sort_user
-    @cards = Card.includes(:tags).where('tags.title = ?', @sort_tag.title).references(:tags)
     @cards = @cards.select { |card|  card.user == current_user  }
     render :index
   end
@@ -90,5 +87,9 @@ class CardsController < ApplicationController
   def set_tag
     @tag = Tag.find(params[:tag_id])
     @sort_tag = Tag.find(params[:tag_id])
+  end
+
+  def sort_by_tag
+    @cards = Card.includes(:tags).where('tags.title = ?', @sort_tag.title).references(:tags)
   end
 end
