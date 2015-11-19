@@ -1,0 +1,6 @@
+Hello from Lyricks!
+===============================================
+
+Your friend thought you may enjoy this Lyrick: <%= @url %>
+
+Thanks and have a great day!
