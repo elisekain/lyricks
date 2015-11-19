@@ -11,6 +11,7 @@ It allows the user to:
 - view other user's cards (but not edit/delete their cards)
 - browse cards by genre
 - edit/delete their profile
+- upload a profile picture
 
 Lyricks also includes basic model tests using RSpec.
 
@@ -23,10 +24,14 @@ Lyricks also includes basic model tests using RSpec.
 - Sass
 - Git / GitHub
 - Heroku
+- Amazon Web Services
 
 **Rails Gems**
 - Devise
 - RSpec
+- CarrierWave
+- Fog
+- Figaro
 
 ### Installation Instructions
 
