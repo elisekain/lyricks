@@ -5,7 +5,10 @@
     <%= link_to "Edit", edit_card_path(@card), class: "lyrick_action" %>
     <%= link_to "Delete", card_path(@card), method: :delete, class: "delete lyrick_action" %>
   <% else %>
-    <%= "Lyrick by: #{@card.user.username}" %>
+    <div class="user_details">
+      <p><%= "Lyrick by: #{@card.user.username}" %></p>
+      <%= image_tag @card.user.profile_pic, alt: "#{@card.user.username} profile pic", class: "profile_pic" %>
+    </div>
   <% end %>
 </div>
 

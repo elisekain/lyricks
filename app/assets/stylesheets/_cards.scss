@@ -2,7 +2,7 @@
 
 .card_container, .actions, .tag_actions {
   width: 50%;
-  margin: 2% auto;
+  margin: 1% auto;
 
   @media screen and (max-width: $break-med) {
     width: 70%;
@@ -10,6 +10,16 @@
 
   @media screen and (max-width: $break-small) {
     width: 95%;
+  }
+}
+
+/* User Details */
+.user_details {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  img {
+    margin: 2% auto 0;
   }
 }
 
