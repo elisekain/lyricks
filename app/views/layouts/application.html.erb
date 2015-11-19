@@ -15,6 +15,12 @@
       <% if current_user %>
         <li><%= link_to 'Signout', destroy_user_session_path, :method => :delete %></li>
         <li><%= link_to 'Edit Profile', edit_user_registration_path %></li>
+
+        <li class="profile">
+        <% if @profile_pic %>
+          <%= image_tag @profile_pic, alt: "#{current_user.username} profile pic", class: "profile_pic"%>
+        <% end %>
+        </li>
       <% else %>
         <li><%= link_to 'Signup', new_user_registration_path %></li>
         <li><%= link_to 'Login', new_user_session_path %></li>

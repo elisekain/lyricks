@@ -10,6 +10,7 @@ It allows the user to:
 - add genre tags to a card
 - view other user's cards (but not edit/delete their cards)
 - browse cards by genre
+- edit/delete their profile
 
 Lyricks also includes basic model tests using RSpec.
 
