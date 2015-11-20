@@ -59,38 +59,26 @@
   }
 
   /* Variable Colors */
-  div.grey {
-    @include card-preview-create($grey);
-  }
+  div.grey {@include card-preview-create($grey);}
 
-  div.red {
-    @include card-preview-create($red);
-  }
+  div.red {@include card-preview-create($red);}
 
-  div.orange {
-    @include card-preview-create($orange);
-  }
+  div.orange {@include card-preview-create($orange);}
 
-  div.blue {
-    @include card-preview-create($blue);
-  }
+  div.blue {@include card-preview-create($blue);}
 
-  div.green {
-    @include card-preview-create($green);
-  }
+  div.green {@include card-preview-create($green);}
 
-  div.purple {
-    @include card-preview-create($purple);
-  }
+  div.purple {@include card-preview-create($purple);}
 
   @media screen and (max-width: $break-med) {
-  width: 45%;
-  margin: 2%;
+    width: 45%;
+    margin: 2%;
   }
 
   @media screen and (max-width: $break-small) {
-  width: 75%;
-  margin: 2% 12%;
+    width: 75%;
+    margin: 2% 12%;
   }
 }
 

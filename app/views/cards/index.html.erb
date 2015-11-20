@@ -19,13 +19,12 @@
   </div>
 <% end %>
 
-
-  <% @cards.each do |card| %>
-    <%= link_to card_path(card) do %>
-      <div class="card_preview">
-        <div class="card_overlay_preview <%= card.color_selection %> font_<%= card.font_selection %>">
-          <h3><%= card.title %></h3>
-        </div>
+<% @cards.each do |card| %>
+  <%= link_to card_path(card) do %>
+    <div class="card_preview">
+      <div class="card_overlay_preview <%= card.color_selection %> font_<%= card.font_selection %>">
+        <h3><%= card.title %></h3>
       </div>
-    <% end %>
+    </div>
   <% end %>
+<% end %>

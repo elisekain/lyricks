@@ -39,7 +39,7 @@ class CardsController < ApplicationController
       flash[:notice] = "#{@card.title} was successfully updated."
       redirect_to card_path(@card)
     else
-    flash[:alert] = "Lyrick was not successfully created: 'title' and 'lyric excerpt' are required fields."
+      flash[:alert] = "Lyrick was not successfully created: 'title' and 'lyric excerpt' are required fields."
       render :edit
     end
   end
@@ -70,7 +70,6 @@ class CardsController < ApplicationController
     @cards = @cards.select { |card|  card.user == current_user  }
     render :index
   end
-
 
   private
   def card_params

@@ -76,31 +76,18 @@
     font-family: $cursive-font;
   }
 
-
   /* Variable Colors */
-  div.grey {
-    @include card-create($grey);
-  }
+  div.grey {@include card-create($grey);}
 
-  div.red {
-    @include card-create($red);
-  }
+  div.red {@include card-create($red);}
 
-  div.orange {
-    @include card-create($orange);
-  }
+  div.orange {@include card-create($orange);}
 
-  div.blue {
-    @include card-create($blue);
-  }
+  div.blue {@include card-create($blue);}
 
-  div.green {
-    @include card-create($green);
-  }
+  div.green {@include card-create($green);}
 
-  div.purple {
-    @include card-create($purple);
-  }
+  div.purple {@include card-create($purple);}
 }
 
 /* Actions */

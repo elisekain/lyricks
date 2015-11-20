@@ -1,6 +1,7 @@
 <div class="actions">
   <%= link_to "My Lyricks", cards_path, class: "lyrick_action" %>
   <%= link_to "Browse Lyricks", cards_browse_path, class: "lyrick_action" %>
+
   <% if current_user.id == @card.user_id %>
     <%= link_to "Edit", edit_card_path(@card), class: "lyrick_action" %>
     <%= link_to "Delete", card_path(@card), method: :delete, class: "delete lyrick_action" %>
@@ -27,7 +28,7 @@
   </div>
 </div>
 
-
+<!-- Show tags if current user's card -->
 <% if current_user.id == @card.user_id %>
   <div class="tag_actions">
   <% @tags.each do |tag| %>
