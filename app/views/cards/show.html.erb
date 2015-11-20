@@ -14,7 +14,14 @@
 
 <div class="card_container">
   <div class="card_overlay <%= @card.color_selection %>">
+
+    <!-- Make headline smaller if song title is long -->
+    <% if @card.title.length > 30 %>
+      <h3 class="font_<%= @card.font_selection %> long"><%= @card.title %></h3>
+    <% else %>
     <h3 class="font_<%= @card.font_selection %>"><%= @card.title %></h3>
+    <% end %>
+
     <%= image_tag "#{@card.icon_selection}.svg", alt: "#{@card.icon_selection} icon" %>
     <p class="#{@card.color_selection}"><%= @text_collection %></p>
   </div>

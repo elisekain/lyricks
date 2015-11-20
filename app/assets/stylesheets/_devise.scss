@@ -66,6 +66,18 @@ input {
   color: $grey;
 }
 
+#user_profile_pic {
+  padding: 2% 19%;
+}
+
+.file_input {
+  color: $white;
+
+  @media screen and (max-width: $break-small) {
+    font-size: 0.75rem;
+  }
+}
+
 .actions {
   width: 90%;
 }
