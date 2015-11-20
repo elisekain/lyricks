@@ -49,7 +49,7 @@ aws_access_key_id: ""
 aws_secret_access_key: ""
 aws_bucket: ""
 ```
-If deploying to Heroku, you can set the environmental variables to allow AWS by clicking on "Settings", then "Reveal Config Vars" and adding them in manually.
+If deploying to Heroku, you can set the environmental variables to allow AWS by viewing the app in Heroku, clicking on "Settings", then "Reveal Config Vars" and adding them in manually.
 
 ### User Stories
 
