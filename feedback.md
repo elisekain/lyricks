@@ -12,7 +12,7 @@ They will also assign a **Total Score**, to serve as an overall gauge of whether
 | **1** | _Meets expectactions_ |
 | **2** | _Exceeds expectations_ |
 
-## Project Workflow
+## Project Workflow - Meets expectations
 ##### How effectively did you plan, execute, and present this project?
 - The `readme.md` file contains any necessary installation instructions
 
@@ -40,7 +40,7 @@ They will also assign a **Total Score**, to serve as an overall gauge of whether
   - One thing the creator would do differently next time :+1:
   - The next feature the creator would like to implement :+1:
 
-## Technical Requirements
+## Technical Requirements - Exceeds Expectations
 ##### How well does your app demonstrate a grasp of the technologies introduced in class?
 - The app contains at least 2 models
 
@@ -54,7 +54,7 @@ They will also assign a **Total Score**, to serve as an overall gauge of whether
 
 > :+1: I like that tags don't need there own controller and so that's handled by the cards. Could have add_tag and remove_tag be create and update routes on a small tag controller but the way you have it now works. It's a possible refactor if you add more to tags.
 
-## Creativity / Interface
+## Creativity / Interface - Exceeds expectations
 ##### How memorable and enjoyable to use is your app?
 - The app displays a personal spin or creative element through its written language, functionality, purpose, and/or CSS
 
@@ -64,7 +64,7 @@ They will also assign a **Total Score**, to serve as an overall gauge of whether
 
 > Absolutely
 
-## Code Quality
+## Code Quality - Exceeds expectations
 ##### How able would an uninformed programmer be to reuse and extend your code?
 - The code follows style guidance and best practices covered in class, such as spacing, indenting, modularity, and semantic naming
 
@@ -78,11 +78,11 @@ They will also assign a **Total Score**, to serve as an overall gauge of whether
 
 > :+1: been really impressed with your consistency on this. As far as the divs as children elements of labels goes, the rational is [here] (http://stackoverflow.com/a/18609649). As far ways to do the same thing differently, Robin has a lesson plan [here](https://github.com/ga-dc/curriculum/tree/master/10-back-and-front-of-front-end/pseudo-selectors#radio-buttons) with a simple implementation of custom radio buttons. I think it is close to what you're doing. I can also take a look at the tutorial if you send it my way to see if I have another idea.
 
-## Deployment and Functionality
+## Deployment and Functionality - Exceeds expectations
 ##### How accessible is your app to those who may want to explore it?
 - Cursory use of the app by an uninformed user yields no errors that "break" it
 
-> Couldn't find any errors
+> Couldn't find any errors. Deployed app functions very well
 
 - The app is deployed to Heroku (or another hosting service)
 
