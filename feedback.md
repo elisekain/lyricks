@@ -52,7 +52,7 @@ They will also assign a **Total Score**, to serve as an overall gauge of whether
 
 - At least 1 model incorporates `GET`, `POST`, `PUT`, and `DELETE` routes
 
-> :+1: I like that tags don't need there own controller and so that's handled by the cards. Could have add_tag and remove_tag be create and update routes on a small tag controller but the way you have it now works. It's a possible refactor if you add more to tags.
+> :+1: I like that tags don't need their own controller and so that's handled by the cards. Could have add_tag and remove_tag be create and update routes on a small tag controller but the way you have it now works. It's a possible refactor if you add more to tags.
 
 ## Creativity / Interface - Exceeds expectations
 ##### How memorable and enjoyable to use is your app?
