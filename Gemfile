@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+ruby "2.2.4"
+
 # E. Kain Added Gems
 gem 'devise'
 gem 'carrierwave'
